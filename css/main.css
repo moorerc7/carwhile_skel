@@ -34,6 +34,13 @@ p, ul, li {
 	font-family: 'Montserrat', sans-serif;
 }
 
+hr {
+	text-align: center;
+	min-height: 1px;
+	width: 70%;
+	background-color: #4ebbeb;	
+}
+
 
 /*Specific styling rules*/
 
@@ -138,6 +145,11 @@ p, ul, li {
 	font-size: 15px;
 }
 
+.introducing h2 {
+	font-size: 3.0rem;
+	text-align: center;
+}
+
 .what_we_offer {
 	text-align: center;
 	box-sizing: border-box;
@@ -198,5 +210,13 @@ p, ul, li {
 
 	.icon_bin p {
 		font-size: 18px;
+	}
+
+	.introducing h2 {
+		font-size: 4.2rem;
+	}
+
+	.introducing p {
+		font-size: 2.0rem;
 	}
 }
