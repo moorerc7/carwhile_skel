@@ -1,0 +1,130 @@
+/*Entire document rules*/
+
+body {
+	margin: 0 auto;
+}
+
+main {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	/*padding-top: 100px;*/
+}
+
+/* Base Styles - changed from skeleton.css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
+  color: #222; }
+
+/*Assigning header font vs paragraph fonts*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p, ul, li {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Specific styling rules*/
+
+/*Header*/
+
+.header_v1 {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+}
+
+.header_v1 a {
+	display: inline-block;
+}
+
+.header_v1 img {
+	width: 100%;
+	padding: 20px 0;
+}
+
+.header_v1 nav {
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+	top: 23px;
+	font-size: 18px;
+}
+
+.header_v1 ul, li {
+	display: inline-block;
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0;
+}
+
+.header_v1 li {
+	/*padding: 10px;*/
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.nav_items_standard a,
+.nav_items_smart a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+
+}
+
+.nav_items_standard a:hover,
+.nav_items_smart a:hover {
+	color: #4ebbeb;
+}
+
+.nav_items_smart {
+	border: 1px solid #DDDDDD;
+	border-radius: 10%;
+}
+
+
+
+/*Home Page*/
+
+.hero_v1 {
+	background-image: url("../assets/images/home_page/hero_keyhandoff_v2.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 1500px;
+	width: 100%;
+	height: 530px;
+	padding-top: 22%;
+}
+
+.hero_v1 div {
+	position: static;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.hero_v1 h1 {
+	color: white;
+	text-align: center;
+}
+
+.hero_v1 a.button {
+	background-color: #4ebbeb;
+	border-color: #4ebbdb;
+	height: 40px;
+	font-size: 15px;
+
+}
