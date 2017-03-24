@@ -23,7 +23,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Open Sans', 'Montserrat', sans-serif;
-  color: #222; }
+  color: #666666; }
 
 /*Assigning header font vs paragraph fonts*/
 h1, h2, h3, h4, h5, h6 {
@@ -113,6 +113,7 @@ p, ul, li {
 	background-position: 55% center;
 	width: 100%;
 	height: 375px;
+	margin-bottom: 30px;
 }
 
 .hero_v1 div {
@@ -137,6 +138,29 @@ p, ul, li {
 	font-size: 15px;
 }
 
+.what_we_offer {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.icon_bin {
+	display: inline-block;
+	width: 29%;
+	vertical-align: top;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.icon_bin img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.icon_bin p {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {
 	.hero_v1 {
@@ -146,7 +170,7 @@ p, ul, li {
 		background-repeat: no-repeat;
 		max-width: 1500px;
 		width: 100%;
-		height: 530px;
+		height: 300px;
 		padding-top: 22%;
 	}
 
@@ -162,5 +186,17 @@ p, ul, li {
 		color: white;
 		text-align: center;
 		font-size: 5.0rem;
+	}
+
+	.icon_bin {
+		display: inline-block;
+		width: 18%;
+		vertical-align: top;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.icon_bin p {
+		font-size: 18px;
 	}
 }
