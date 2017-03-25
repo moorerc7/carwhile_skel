@@ -173,6 +173,43 @@ hr {
 	font-size: 12px;
 }
 
+.hiw_step1 {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.hiw_step1 h3 {
+	text-transform: uppercase;
+}
+
+.hiw_step1 h3::first-letter {
+	color: #4ebbeb;
+	font-weight: bold;
+}
+
+.hiw_step1 p {
+	margin-bottom: 0;
+}
+
+.icon_bin_4 {
+	display: inline-block;
+	width: 21%;
+	vertical-align: top;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 2.5rem;
+}
+
+.icon_bin_4 img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.icon_bin_4 p {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {
 	.hero_v1 {
