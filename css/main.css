@@ -248,6 +248,50 @@ input[type="submit"].button-primary {
 	font-weight: bold;
 }
 
+.coverage_banner {
+	background-image: url("../assets/images/home_page/service_area_banner_ v4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.coverage_banner div {
+	padding: 20px 10px 20px 10px;
+}
+
+.coverage_banner h3 {
+	color: white;
+}
+
+.yelp h3 {
+	text-align: center;
+}
+
+.yelp_bin h4, .yelp_bin h5, .yelp_bin img {
+	text-align: center;
+}
+
+.yelp_bin h4 {
+	font-weight: bold;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.yelp_bin img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.yelp_bin p {
+	color: #89888e;
+}
+
 .insurance {
 	text-align: center;
 	box-sizing: border-box;
