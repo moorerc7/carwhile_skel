@@ -56,8 +56,8 @@ hr {
 }
 
 
-/* Larger than mobile */
-@media (min-width: 400px) {
+/* HEADER RULES OUT OF PLACE NOW FIX LATER ------------------------------------------------------------------------------------------OUT OF PLACE*/ 
+@media (min-width: 1000px) {
 	.header_v1 {
 		display: unset;
 		position: absolute;
@@ -376,8 +376,29 @@ input[type="submit"].footer_button {
 	margin-right: auto;
 }
 
-/* Larger than mobile */
-@media (min-width: 400px) {
+.footer_ending {
+	width: 100%;
+	border-top: 1px solid #666666;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.footer_ending a {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.footer_ending img {
+	max-width: 50px;
+}
+
+.footer_ending p {
+	margin-bottom: 0;
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
 	.hero_v1 {
 		background-image: url("../assets/images/home_page/hero_keyhandoff_v2.jpg");
 		background-size: contain;
