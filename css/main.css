@@ -160,7 +160,7 @@ hr {
 	box-sizing: border-box;
 }
 
-.icon_bin {
+.icon_bin_wwo {
 	display: inline-block;
 	width: 29%;
 	vertical-align: top;
@@ -168,12 +168,12 @@ hr {
 	padding-left: 5px;
 }
 
-.icon_bin img {
+.icon_bin_wwo img {
 	max-width: 100%;
 	margin-bottom: 10px;
 }
 
-.icon_bin p {
+.icon_bin_wwo p {
 	text-transform: uppercase;
 	font-size: 12px;
 }
@@ -263,12 +263,28 @@ hr {
 	padding: 20px 10px 20px 10px;
 }
 
+.coverage_banner a.button {
+	height: 40px;
+	font-size: 15px;
+}
+
 .coverage_banner h3 {
 	color: white;
 }
 
+.yelp {
+	text-align: center;
+}
+
 .yelp h3 {
 	text-align: center;
+}
+
+.yelp_bin {
+	display: inline-block;
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .yelp_bin h4, .yelp_bin h5, .yelp_bin img {
@@ -303,6 +319,7 @@ hr {
 
 .insurance img {
 	margin-bottom: 10px;
+	max-width: 100%
 }
 
 .insurance p {
@@ -397,6 +414,69 @@ input[type="submit"].footer_button {
 	margin-bottom: 0;
 }
 
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	.hero_v1 div {
+		width: 450px;
+	}
+
+	.hero_v1 h1 {
+		font-size: 35px;
+	}
+
+	.hero_v1 a.button {
+		font-size: 20px;
+	}
+
+	.icon_bin_wwo {
+		width: 17%;
+	}
+
+	.yelp_bin {
+		width: 47%;
+	}
+
+	.insurance {
+		border-top: 1px solid #777777;
+		border-bottom: 1px solid #777777;
+		border-right: 0;
+		border-left: 0;
+	}
+
+	.insurance img {
+		margin-bottom: 0;
+		max-width: 128px;
+		margin-bottom: 2%;
+		margin-top: 2%;
+	}
+
+	.insurance p {
+		font-size: 20px;
+		margin-bottom: 4%;
+		margin-top: 4%
+	}
+
+	input[type="submit"].footer_button {
+		margin-left: 0;
+	}
+
+	.footer_ending a {
+		margin-bottom: 0;
+	}
+
+	.footer_ending p {
+		margin-top: 15px;
+	}
+
+	.fe_align1 {
+		text-align: left;
+	}
+
+	.fe_align2 {
+		text-align: right;
+	}
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	.hero_v1 {
@@ -424,7 +504,7 @@ input[type="submit"].footer_button {
 		font-size: 5.0rem;
 	}
 
-	.icon_bin {
+	.icon_bin_wwo {
 		display: inline-block;
 		width: 18%;
 		vertical-align: top;
@@ -432,7 +512,7 @@ input[type="submit"].footer_button {
 		padding-left: 5px;
 	}
 
-	.icon_bin p {
+	.icon_bin_wwo p {
 		font-size: 18px;
 	}
 
