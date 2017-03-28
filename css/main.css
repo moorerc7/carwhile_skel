@@ -118,6 +118,14 @@ hr {
 
 /*Home Page*/
 
+main h1 {
+	font-size: 24px;
+}
+
+main h2 {
+	font-size: 3.5rem;
+}
+
 .hero_v1 {
 	background-image: url("../assets/images/home_page/hero_keyhandoff_v2.jpg");
 	background-size: cover;
@@ -140,7 +148,6 @@ hr {
 .hero_v1 h1 {
 	color: white;
 	text-align: center;
-	font-size: 24px;
 }
 
 .hero_v1 a.button {
@@ -151,7 +158,6 @@ hr {
 }
 
 .introducing h2 {
-	font-size: 3.0rem;
 	text-align: center;
 }
 
@@ -374,6 +380,10 @@ footer {
 	border-bottom: 10px solid #4ebbeb;
 }
 
+.footer a {
+	text-decoration: none;
+}
+
 .footer a:hover {
 	color: #4ebbeb;
 }
@@ -416,12 +426,16 @@ input[type="submit"].footer_button {
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-	.hero_v1 div {
-		width: 450px;
+	main h1 {
+		font-size: 35px;
 	}
 
-	.hero_v1 h1 {
-		font-size: 35px;
+	main h2 {
+		font-size: 3.5rem;
+	}
+
+	.hero_v1 div {
+		width: 450px;
 	}
 
 	.hero_v1 a.button {
@@ -477,6 +491,47 @@ input[type="submit"].footer_button {
 	}
 }
 
+/* Larger than tablet */
+@media (min-width: 750px) {
+	main h1 {
+		font-size: 40px;
+	}
+
+	main h2 {
+		font-size: 3.8rem;
+	}
+
+	.hero_v1 {
+		background-position: center center;
+	}
+
+	.hero_v1 div {
+		width: 650px;
+		top: 50%;
+	}
+
+	.hero_v1 h1 {
+		/*font-size: 40px;*/
+	}
+
+	.hero_v1 a.button {
+		font-size: 25px;
+		height: 50px;
+		padding-top: 3px;
+	}
+
+	.coverage_banner a.button {
+		font-size: 20px;
+		height: 45px;
+		padding-top: 2px;
+	}
+
+	.coverage_banner {
+		height: 200px;
+		padding-top: 50px;
+	}
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	.hero_v1 {
@@ -491,11 +546,12 @@ input[type="submit"].footer_button {
 	}
 
 	.hero_v1 div {
-		position: static;
+		/*position: static;*/
 		width: 700px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
+		top: 10%;
 	}
 
 	.hero_v1 h1 {
