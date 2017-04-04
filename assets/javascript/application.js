@@ -19,6 +19,7 @@
 $(document).ready(function() {
 	if ($(window). scrollTop() !== 0) {
 		$('.header_v2').addClass('sticky');
+		console.log('reload firing');	
 	}
 	document.addEventListener("touchmove", ScrollStart, false);
 	document.addEventListener("scroll", Scroll, false);
