@@ -7,8 +7,9 @@ $(document).ready(function () {
 		$('.header_v2').addClass('sticky');
 	}
 
-	$(window).on('scroll', function() {
+	$(window).on('touchmove', function() {
 		$('.header_v2').addClass('sticky');
+		console.log('working');
 		if ($(this).scrollTop() == 0) {
 			$('.header_v2').removeClass('sticky');
 		}
