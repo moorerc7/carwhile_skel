@@ -8,7 +8,7 @@ main {
 	margin: 0;
 	border: 0;
 	padding: 0;
-	/*padding-top: 100px;*/
+	padding-top: 70px; /*so that the fixed menu shows up properly on mobile!*/
 }
 
 /* Base Styles - changed from skeleton.css
@@ -127,10 +127,13 @@ main h2 {
 }
 
 .header_v2 {
-	position: absolute;
+	/*position: absolute;*/
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 0 rgba(0,0,0,0.1);
 	width: 100%;
 	height: 70px;
-	background-color: transparent;
+	/*background-color: transparent;*/
 	transition: all 250ms, background-color 500ms;
 	z-index: 500;
 }
