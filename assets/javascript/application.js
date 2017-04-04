@@ -42,3 +42,13 @@ $(document).ready(function() {
 		$(this).closest('.header_v2').find('.nav_panel_mobile').toggleClass('expand');
 	})
 })
+
+// MOBILE MENU ABOUT US DROPDOWN FEATURE
+
+$(document).ready(function() {
+	$('.dropdown_link').on('click', 'a', function() {
+		console.log('ABOUT US button works!');
+		$(this).closest('.dropdown_link').find('.dropdown_link_items').toggleClass('show_dropdown');
+		$(this).closest('.dropdown_link').find('.dropdown_arrow').toggleClass('arrow_up');
+	});
+})

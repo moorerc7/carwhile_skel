@@ -254,8 +254,25 @@ main h2 {
 	border-top: 1px solid white;
 }
 
+.nav_panel_mobile .dropdown_arrow {
+	display: inline-block;
+	margin-left: 10px;
+	background-image: url("../assets/images/header/arrow-down-white@2x.png");
+	background-size: 100%;
+	width: 30px;
+	height: 14px;
+}
+
+.dropdown_arrow.arrow_up {
+	background-image: url("../assets/images/header/arrow-up-white@2x.png");
+}
+
 .nav_panel_mobile .dropdown_link_items {
 	display: none;
+}
+
+.dropdown_link_items.show_dropdown {
+	display: block;
 }
 
 .hero_v1 {
