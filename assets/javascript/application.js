@@ -15,10 +15,11 @@
 // 	});
 // });
 
-// Sticky nav feature
+// STICKY NAV FEATURE
 $(document).ready(function() {
 	if (window.matchMedia("(min-width: 550px)").matches) {
 		console.log('I should add sticky now');
+		// ABOVE LINE IS TESTING BE SURE TO REMOVE ONCE DONE
 		if ($(window).scrollTop() !== 0) {
 			$('.header_v2').addClass('sticky');
 		}
@@ -30,5 +31,14 @@ $(document).ready(function() {
 		});
 	} else {
 		console.log('dont add sticky');
+		// ABOVE LINE IS TESTING BE SURE TO REMOVE ONCE DONE
 	} 
 });
+
+// MENU EXPAND FEATURE
+$(document).ready(function() {
+	$('.header_v2').on('click', '.menu_button_label', function() {
+		console.log('button works!');
+		$(this).closest('.header_v2').find('.nav_panel_mobile').toggleClass('expand');
+	})
+})
