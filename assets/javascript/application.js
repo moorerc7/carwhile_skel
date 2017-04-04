@@ -16,19 +16,28 @@
 // });
 
 // Sticky nav try 2
-document.addEventListener("touchmove", ScrollStart, false);
-document.addEventListener("scroll", Scroll, false);
-
-function ScrollStart() {
-    $('.header_v2').addClass('sticky');
-    console.log('scrollStart working');
-}
-
-function Scroll() {
-	$('.header_v2').addClass('sticky');
-    console.log('scroll working for start');	
-	if ($(this).scrollTop() == 0) {
-		$('.header_v2').removeClass('sticky');
-		console.log('scroll end working');
+$(document).ready(function() {
+	if ($(window). scrollTop() !== 0) {
+		$('.header_v2').addClass('sticky');
 	}
-}
+	document.addEventListener("touchmove", ScrollStart, false);
+	document.addEventListener("scroll", Scroll, false);
+
+	function ScrollStart() {
+	    $('.header_v2').addClass('sticky');
+	    console.log('ScrollStart begin working');
+	    if ($(this).scrollTop() == 0) {
+	    	$('.header_v2').removeClass('sticky');
+			console.log('ScrollStart end working');
+	    }
+	}
+
+	function Scroll() {
+		$('.header_v2').addClass('sticky');
+	    console.log('Scroll begin working');	
+		if ($(this).scrollTop() == 0) {
+			$('.header_v2').removeClass('sticky');
+			console.log('Scroll end working');
+		}
+	}
+});
