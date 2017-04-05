@@ -202,6 +202,7 @@ main h2 {
 
 body.expand {
 	overflow: hidden;
+	position: relative;
 }
 
 .nav_panel_mobile.expand span.hamburger {

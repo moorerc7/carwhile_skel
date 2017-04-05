@@ -46,10 +46,10 @@ $(document).ready(function() {
 		$(this).closest('body').toggleClass('expand');
 	});
 	// PREVENT SCROLLING ON IPHONE
-	$(window).on('touchmove', function(e) {
-		if ( $(this).closest('.header_v2').find('.nav_panel_mobile').hasClass('expand')) {
-			e.preventDefault();
-			alert('preventDefault is firing!');
-		}
-	});
+	// $(window).on('touchmove', function(e) {
+	// 	if ( $(this).closest('.header_v2').find('.nav_panel_mobile').hasClass('expand')) {
+	// 		e.preventDefault();
+	// 		alert('preventDefault is firing!');
+	// 	}
+	// });
 })
