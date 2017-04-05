@@ -19,7 +19,7 @@
 $(document).ready(function() {
 	if (window.matchMedia("(min-width: 550px)").matches) {
 		console.log('I should add sticky now');
-		// ABOVE LINE IS TESTING BE SURE TO REMOVE ONCE DONE
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 		if ($(window).scrollTop() !== 0) {
 			$('.header_v2').addClass('sticky');
 		}
@@ -31,7 +31,7 @@ $(document).ready(function() {
 		});
 	} else {
 		console.log('dont add sticky');
-		// ABOVE LINE IS TESTING BE SURE TO REMOVE ONCE DONE
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 	} 
 });
 
@@ -39,16 +39,8 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.header_v2').on('click', '.menu_button_label', function() {
 		console.log('button works!');
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 		$(this).closest('.header_v2').find('.nav_panel_mobile').toggleClass('expand');
+		$(this).closest('body').toggleClass('expand');
 	})
-})
-
-// MOBILE MENU ABOUT US DROPDOWN FEATURE
-
-$(document).ready(function() {
-	$('.dropdown_link').on('click', 'a', function() {
-		console.log('ABOUT US button works!');
-		$(this).closest('.dropdown_link').find('.dropdown_link_items').toggleClass('show_dropdown');
-		$(this).closest('.dropdown_link').find('.dropdown_arrow').toggleClass('arrow_up');
-	});
 })

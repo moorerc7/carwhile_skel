@@ -180,7 +180,7 @@ main h2 {
 	display: block;
 	background-size: 100%;
 	width: 20px;
-	height: 14px;
+	height: 14.4px;
 }
 
 /*HIDING NAV PANEL BEFORE CLICK FOR MOBILE*/
@@ -196,7 +196,12 @@ main h2 {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(78,187,235,0.95);
+	overflow-y: auto;
 	/*padding: 20px;*/
+}
+
+body.expand {
+	overflow: hidden;
 }
 
 .nav_panel_mobile.expand span.hamburger {
