@@ -224,12 +224,38 @@ main h2 {
 	font-size: 20px;
 }
 
+.nav_panel_mobile.expand p {
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
 .nav_panel_mobile.expand ul {
 	list-style: none;
 }
 
 .nav_panel_mobile.expand li {
 	margin-bottom: 20px;
+}
+
+.nav_panel_mobile.expand .dropdown_link {
+	position: relative;
+}
+
+.nav_panel_mobile.expand .dropdown_wrapper {
+	overflow: hidden;
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+}
+
+.nav_panel_mobile.expand .dropdown_select {
+	width: 220px;
+	font-size: 16px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 .nav_panel_mobile .nav_items_standard {
