@@ -37,10 +37,19 @@ $(document).ready(function() {
 
 // MENU EXPAND FEATURE
 $(document).ready(function() {
+	// var navPanel = $(this).closest('.header_v2').find('.nav_panel_mobile');
+
 	$('.header_v2').on('click', '.menu_button_label', function() {
 		console.log('button works!');
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 		$(this).closest('.header_v2').find('.nav_panel_mobile').toggleClass('expand');
 		$(this).closest('body').toggleClass('expand');
-	})
+	});
+	// PREVENT SCROLLING ON IPHONE
+	$(window).on('touchmove', function(e) {
+		if ( $(this).closest('.header_v2').find('.nav_panel_mobile').hasClass('expand')) {
+			e.preventDefault();
+			alert('preventDefault is firing!');
+		}
+	});
 })
