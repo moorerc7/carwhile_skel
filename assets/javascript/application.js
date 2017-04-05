@@ -1,19 +1,7 @@
 // strict mode
 'use strict';
 
-// // Sticky Nav Feature first try
-// $(document).ready(function () {
-// 	if ($(window).scrollTop() !== 0) {
-// 		$('.header_v2').addClass('sticky');
-// 	}
-
-// 	$(window).on('scroll' || 'touchmove', function() {
-// 		$('.header_v2').addClass('sticky');
-// 		if ($(this).scrollTop() == 0) {
-// 			$('.header_v2').removeClass('sticky');
-// 		}
-// 	});
-// });
+/*--------------------------------------HEADER---------------------------------------*/
 
 // STICKY NAV FEATURE
 $(document).ready(function() {
@@ -37,19 +25,22 @@ $(document).ready(function() {
 
 // MENU EXPAND FEATURE
 $(document).ready(function() {
-	// var navPanel = $(this).closest('.header_v2').find('.nav_panel_mobile');
-
 	$('.header_v2').on('click', '.menu_button_label', function() {
 		console.log('button works!');
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 		$(this).closest('.header_v2').find('.nav_panel_mobile').toggleClass('expand');
 		$(this).closest('body').toggleClass('expand');
 	});
-	// PREVENT SCROLLING ON IPHONE
-	// $(window).on('touchmove', function(e) {
-	// 	if ( $(this).closest('.header_v2').find('.nav_panel_mobile').hasClass('expand')) {
-	// 		e.preventDefault();
-	// 		alert('preventDefault is firing!');
-	// 	}
-	// });
+})
+
+/*--------------------------------------LOGIN PAGE---------------------------------------*/
+
+// SWITCH BETWEEN LOGIN AND SIGN UP FORMS
+$(document).ready(function() {
+	$('.login_tabs_container').on('click', 'label', function() {
+		console.log('LOGIN / SIGNUP BUTTON WORKS');
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		$(this).parent('li').toggleClass('is_active');
+		$(this).parent('li').siblings().toggleClass('is_active');
+	})
 })

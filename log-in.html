@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Carwhile | Car Care on Your Schedule</title>
+  <meta name="description" content="On-demand car care company in Washington DC offering washing, detailing & maintenance services. We pick up your car, service it & then return it.">
+  <meta name="author" content="Ryan Moore">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    <!-- Whitney substitute -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   <!-- Gotham substitute  -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/application.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
+
+</head>
+
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <header class="header_v2">
+    <section class="nav-wrapper">
+      <nav>
+        <a href="#top" class="brand">
+          <img src="assets/images/home_page/carwhile_icon2.png" alt="Carwhile logo">
+        </a>
+
+        <input type="checkbox" id="show-menu" role="button" class="menu_button">
+        <label for="show-menu" class="menu_button_label" title="Menu">
+          <span class="hamburger"></span>
+        </label>
+
+        <section class="nav_panel_mobile">
+          <div>
+          <img src="assets/images/header/carwhile_white_small.png" class="brand_white" alt="Carwhile white logo">
+          <input type="checkbox" id="show-menu" role="button" class="menu_button">
+          <label for="show-menu" class="menu_button_label" title="Menu">
+            <span class="hamburger"></span>
+          </label>
+          </div>
+          <ul class="nav_items_standard">
+              <li><a href="log-in.html">Log In / Sign Up</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown_link">
+                <p>About Us<span class="dropdown_arrow"></span></p>
+                <div class="dropdown_wrapper">
+                  <select class="dropdown_select">
+                    <option></option>
+                    <option value="#top">What We Do</option>
+                    <option value="#top">Who We Are</option>
+                    <option value="#top">Contact Us</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="nav_items_highlight">
+              <li><a href="#">Schedule</a></li>
+            </ul>
+        </section>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+
+  <nav class="login_tabs">
+    <ul class="login_tabs_container">
+      <li class="is_active">
+        <input type="checkbox" id="show-menu" role="button" class="login_input">
+        <label for="show-log-in" class="login_label" title="Log In">Log In</label>
+      </li><!--
+      --><li>
+        <input type="checkbox" id="show-menu" role="button" class="login_input">
+        <label for="show-sign-up" class="login_label" title="Sign Up">Sign Up</label>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="main_content_login">
+
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+
+          <form class="log_in_form"> <!-- LOG IN FORM - DEFAULT IS SHOWING -->
+            <div class="row">
+              <div class="twelve columns">
+                <label for="LogInEmailInput" class="hidden_label">Email</label>
+                <input class="u-full-width" type="email" placeholder="Email" id="LogInEmailInput">
+              </div>
+              <div class="twelve columns">
+                <label for="LogInPasswordInput" class="hidden_label">Password</label>
+                <input class="u-full-width" type="password" placeholder="Password" id="LogInPasswordInput">
+              </div>
+            </div>
+            <label class="remember_me_checkbox">
+              <input type="checkbox">
+              <span class="label-body">Remember Me</span>
+            </label>
+            <input class="button-primary" type="submit" value="Log In">
+            <button type="button" class="forgot_password_button">Forgot your password?</button>
+          </form>
+
+          <form class="sign_up_form hidden_form"> <!-- SIGN UP FORM - DEFAULT IS HIDDEN -->
+            <div class="row">
+              <div class="twelve columns">
+                <label for="LogInEmailInput" class="hidden_label">Email</label>
+                <input class="u-full-width" type="email" placeholder="Email" id="LogInEmailInput">
+              </div>
+              <div class="twelve columns">
+                <label for="LogInPasswordInput" class="hidden_label">Password</label>
+                <input class="u-full-width" type="password" placeholder="Password" id="LogInPasswordInput">
+              </div>
+            </div>
+            <label class="show_password_checkbox">
+              <input type="checkbox">
+              <span class="label-body">Show Password</span>
+            </label>
+            <input class="button-primary" type="submit" value="Next">
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  </main>
+
+  <footer>
+    <div class="connect_banner">
+      <h3>Connect with Us</h3>
+    </div>
+    <div class="container footer_content">
+      <div class="row">
+        <div class="six columns footer">
+          <h5>Need Help?</h5>
+          <a href="mailto:info@carwhile.com" target="_self" class="connect_link">info@carwhile.com</a>
+          <a href="tel:2028549575" target="_self" class="connect_link">(202) 854-9575</a>
+          <h5>Socialize</h5>
+          <div class="social_bin">
+            <a href="https://twitter.com/carwhile" target="_blank" class="social_link"><img src="assets/images/footer/tw_white.png" alt="Twitter icon button: check out Carwhile on Twitter!"></a>
+            <a href="https://www.instagram.com/carwhile/" target="_blank" class="social_link"><img src="assets/images/footer/instagram.jpg" alt="Instagram icon button: check out Carwhile on Instagram!"></a>
+            <a href="https://www.facebook.com/carwhile" target="_blank" class="social_link"><img src="assets/images/footer/fb_white.png" alt="Facebook icon button: check out Carwhile on Facebook!"></a>
+          </div>
+        </div>
+        <div class="six columns footer">
+          <h5>Want More Information?</h5>
+          <p>Enter your information below to be the first to know about our promotions and new services.</p>
+          <input class="u-full-width" type="email" placeholder="Name" id="footerEmailInput">
+          <input class="u-full-width" type="email" placeholder="Email" id="footerNameInput">
+          <input class="button-primary footer_button" type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+    <div class="footer_ending">
+      <div class="container">
+        <div class="row">
+          <div class="six columns fe_align1">
+            <a href="#">
+              <img src="assets/images/footer/favicon_small.png">
+            </a>
+          </div>
+          <div class="six columns fe_align2">
+            <p>Copyright © Carwhile 2017.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
