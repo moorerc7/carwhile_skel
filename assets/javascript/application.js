@@ -33,6 +33,22 @@ $(document).ready(function() {
 	});
 });
 
+/*--------------------------------------HOME PAGE---------------------------------------*/
+
+// VIEW AND EXIT COVERAGE AREA LIGHTBOX
+$(document).ready(function() {
+	$('.coverage_banner').on('click', 'button', function() {
+		console.log('COVERAGE BUTTON WORKS!');
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		$(this).closest('article').next('article').addClass('show');
+	});
+	$('.coverage_lightbox_bg').on('click', '.lightbox_exit_label', function() {
+		console.log('LIGHTBOX EXIT BUTTON WORKS!');
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		$(this).closest('article').removeClass('show');
+	})
+});
+
 /*--------------------------------------LOGIN PAGE---------------------------------------*/
 
 // SWITCH BETWEEN LOGIN AND SIGN UP FORMS
