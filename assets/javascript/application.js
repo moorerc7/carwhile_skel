@@ -5,7 +5,7 @@
 
 // STICKY NAV FEATURE
 $(document).ready(function() {
-	if (window.matchMedia("(min-width: 550px)").matches) {
+	if (window.matchMedia("(min-width: 750px)").matches) {
 		console.log('I should add sticky now');
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
 		if ($(window).scrollTop() !== 0) {

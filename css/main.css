@@ -613,9 +613,9 @@ input[type="submit"].footer_button {
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-	main {
+/*	main {
 		padding-top: 0;
-	}
+	}*/
 
 	main h1 {
 		font-size: 35px;
@@ -625,7 +625,7 @@ input[type="submit"].footer_button {
 		font-size: 3.5rem;
 	}
 
-	.header_v2 {
+	/*.header_v2 {
 		position: absolute;
 		background-color: transparent;
 		box-shadow: none;
@@ -644,6 +644,7 @@ input[type="submit"].footer_button {
 	.header_v2.sticky span {
 		background-image: url("../assets/images/header/icon-hamburger@2x.png");
 	}
+	COMMENTED OUT DUE TO PROBLEMS WITH STICKY MENU LOOKING THROUGH IPHONE IN LANDSCAPE*/
 
 	.hero_v1 div {
 		width: 450px;
@@ -704,12 +705,36 @@ input[type="submit"].footer_button {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+	main {
+		padding-top: 0;
+	}
+
 	main h1 {
 		font-size: 40px;
 	}
 
 	main h2 {
 		font-size: 3.8rem;
+	}
+
+	.header_v2 {
+		position: absolute;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.header_v2.sticky {
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.95);
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 0 rgba(0,0,0,0.1);
+	}
+
+	.header_v2 span.hamburger {
+		background-image: url("../assets/images/header/icon-hamburger-white@2x.png");
+	}
+
+	.header_v2.sticky span {
+		background-image: url("../assets/images/header/icon-hamburger@2x.png");
 	}
 
 	.hero_v1 {
