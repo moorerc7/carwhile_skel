@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>CW Service Area Map</name>
+    <Style id="line-0288D1-4-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>4</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-4-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-4-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-4-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-4-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-5-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-5-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>8</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-5-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-5-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-5-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Line 1</name>
+      <styleUrl>#line-0288D1-5-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -77.0179367,38.8616323,0
+          -77.0134735,38.8640382,0
+          -77.007637,38.8669787,0
+          -77.0059204,38.8720575,0
+          -76.9993973,38.873394,0
+          -76.9928741,38.8715229,0
+          -76.9860077,38.8755322,0
+          -76.9798279,38.8774032,0
+          -76.9733047,38.8795413,0
+          -76.9695282,38.8859554,0
+          -76.9684982,38.8896967,0
+          -76.9678116,38.9393836,0
+          -77.0072937,38.9692858,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>CW Service Area</name>
+      <styleUrl>#line-0288D1-4-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -77.0072937,38.9692858,0
+          -77.0210266,38.9804959,0
+          -77.0323563,39.014649,0
+          -77.0615387,39.0141155,0
+          -77.0687485,39.0066458,0
+          -77.0817947,39.0050451,0
+          -77.0883179,39.0079797,0
+          -77.0941544,39.0135819,0
+          -77.1027374,39.0183835,0
+          -77.1058273,39.0199839,0
+          -77.1123505,39.0162495,0
+          -77.1219635,39.015716,0
+          -77.1315765,39.0130484,0
+          -77.2507095,39.0338528,0
+          -77.245033,38.8798155,0
+          -77.0506685,38.779099,0
+          -77.0537008,38.7918843,0
+          -77.0402527,38.7907538,0
+          -77.0346787,38.8163851,0
+          -77.0387653,38.8340293,0
+          -77.0285797,38.852275,0
+          -77.0134735,38.8640382,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
