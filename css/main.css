@@ -481,7 +481,7 @@ body.expand {
 	z-index: 999;
 }
 
-.coverage_lightbox_bg div {
+.coverage_lightbox_bg .lightbox_inner {
 	background-color: white;
 	position: relative;
 	top: 10%;
@@ -517,9 +517,21 @@ body.expand {
 	height: 20px;
 }
 
+.coverage_lightbox_bg .map_container {
+	height: 80%;
+	width: 100%;
+}
+
 #map {
-    height: 70%;
+    display: none;
+    height: 100%;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#map.show_map {
+	display: block;
 }
 
 .yelp {

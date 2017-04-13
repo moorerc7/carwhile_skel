@@ -1,18 +1,20 @@
 // strict mode
 'use strict';
 // LOAD GOOGLE MAP FOR SERVICE AREA
+
 function initMap() {
     var dcCenter = {lat: 38.8895563, lng: -77.0352546};
     var map = new google.maps.Map(document.getElementById('map'), {
+      streetViewControl: false,
+      mapTypeControl: false,
       zoom: 11,
       center: dcCenter
     });
     var ctaLayer = new google.maps.KmlLayer({
-      url: 'https://raw.githubusercontent.com/moorerc7/gm_test/master/kml_files/service_map2.kml',
+      url: 'https://raw.githubusercontent.com/moorerc7/carwhile_skel/master/assets/files/service_map2.kml',
       map: map
     });
 }
-// initMap();
 
 
 /*--------------------------------------HEADER---------------------------------------*/
@@ -52,14 +54,19 @@ $(document).ready(function() {
 // VIEW AND EXIT COVERAGE AREA LIGHTBOX
 $(document).ready(function() {
 	$('.coverage_banner').on('click', 'button', function() {
+		var hiddenLightbox = $(this).closest('article').next('article')
 		console.log('COVERAGE BUTTON WORKS!');
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
-		$(this).closest('article').next('article').addClass('show');
+		hiddenLightbox.addClass('show');
+		hiddenLightbox.find('#map').addClass('show_map');
+		initMap();
+		// google.maps.event.trigger(map, 'resize');
 	});
 
 	$('.coverage_lightbox_bg').on('click', '.lightbox_exit_label', function() {
 		console.log('LIGHTBOX EXIT BUTTON WORKS!');
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		$(this).siblings('#map').removeClass('show_map');
 		$(this).closest('article').removeClass('show');
 	});
 });

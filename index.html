@@ -28,7 +28,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/javascript/application.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzdk9O973f6I5quIKz_Oh-u6It_12ohxs&callback=initMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzdk9O973f6I5quIKz_Oh-u6It_12ohxs&callback=initMap" async defer></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -250,27 +250,15 @@
       </article>
 
       <article class="coverage_lightbox_bg">
-        <div>
+        <div class="lightbox_inner">
           <input type="checkbox" id="close-lightbox" role="button" class="lightbox_exit">
           <label for="close-lightbox" class="lightbox_exit_label" title="Exit">
             <span class="close_grey"></span>
           </label>
           <h3>Our Washington, D.C. Coverage Map</h3>
-          <div id="map"></div>
-          <!-- <script type="text/javascript">
-            function initMap() {
-              var dcCenter = {lat: 38.8895563, lng: -77.0352546};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
-                center: dcCenter
-              });
-              var ctaLayer = new google.maps.KmlLayer({
-                url: 'https://raw.githubusercontent.com/moorerc7/gm_test/master/kml_files/service_map2.kml',
-                map: map
-              });
-            }
-          </script> -->
-          <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzdk9O973f6I5quIKz_Oh-u6It_12ohxs&callback=initMap"></script> -->
+          <div class="map_container">
+            <div id="map"></div>
+          </div>
         </div>
       </article>
 
