@@ -1,7 +1,7 @@
 // strict mode
 'use strict';
-// LOAD GOOGLE MAP FOR SERVICE AREA
 
+// LOAD GOOGLE MAP FOR SERVICE AREA
 function initMap() {
     var dcCenter = {lat: 38.8895563, lng: -77.0352546};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -48,6 +48,19 @@ $(document).ready(function() {
 		$(this).closest('body').toggleClass('expand');
 	});
 });
+
+// DROPDOWN MENU LINKING
+$(document).ready(function() {
+	var dropDown = $('header').find('.dropdown_select');
+	$(dropDown).on('change', function() {
+		console.log('the click worked');
+		// ABOVE LINE IS FOR TESTING BESURE TO REMOVE ONCE DONE
+		if (dropDown.val() == 'what-we-do') {
+			window.location.href = "what-we-do.html";
+			// window.location.replace('what-we-do.html');
+		}
+	});
+})
 
 /*--------------------------------------HOME PAGE---------------------------------------*/
 

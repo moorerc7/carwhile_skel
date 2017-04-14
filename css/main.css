@@ -886,7 +886,7 @@ input[type="submit"].footer_button {
 	}
 }
 
-/* LOGIN / SIGN UP PAGE RULES ----------------------------------------------------------------------------------------OUT OF PLACE*/
+/* LOGIN / SIGN UP PAGE RULES ---------------------------------------------------------------------------------------------------*/
 
 .login_tabs {
 	margin-top: 70px;
@@ -978,4 +978,7 @@ input[type="submit"].footer_button {
 	border-color: transparent;
 	color: #1EAEDB;
 }
+
+/* WHAT WE DO PAGE RULES ----------------------------------------------------------------------------------------------------*/
+
 
