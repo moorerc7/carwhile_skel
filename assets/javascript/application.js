@@ -56,8 +56,17 @@ $(document).ready(function() {
 		console.log('the click worked');
 		// ABOVE LINE IS FOR TESTING BESURE TO REMOVE ONCE DONE
 		if (dropDown.val() == 'what-we-do') {
+			dropDown.val('blank_option');
 			window.location.href = "what-we-do.html";
 			// window.location.replace('what-we-do.html');
+		} else if (dropDown.val() == 'who-we-are') {
+			dropDown.val('blank_option');
+			window.location.href = "who-we-are.html";
+			// window.location.replace('who-we-are.html');
+		} else if (dropdown.val() == 'contact-us') {
+			dropDown.val('blank_option');
+			window.location.href = "contact-us.html";
+			// window.location.replace('contact-us.html');
 		}
 	});
 })
@@ -123,4 +132,14 @@ $(document).ready(function() {
 			loginForm.toggleClass('hidden_form');
 		}
 	});
+});
+
+/*--------------------------------------WHAT WE DO PAGE---------------------------------------*/
+$(document).ready(function() {
+	$('.accordion_button').on('click', function() {
+		console.log('ACCORDION CLICK WORKED!')
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		$(this).toggleClass('active_accordion');
+		$(this).next('.accordion_panel').toggleClass('active_accordion');
+	})
 });
