@@ -139,6 +139,14 @@ $(document).ready(function() {
 	$('.accordion_button').on('click', function() {
 		console.log('ACCORDION CLICK WORKED!')
 		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		// TOGGLE OFF ANY OTHER ACCORDION ITEMS THAT ARE ACTIVE
+		$('button').not(this).each(function() {
+			if ($(this).hasClass('active_accordion')) {
+				$(this).removeClass('active_accordion');
+				$(this).next('.accordion_panel').removeClass('active_accordion');
+			}
+		})
+		// TOGGLE ACTIVE CLASS ON ACCORDION THAT WAS CLICKED
 		$(this).toggleClass('active_accordion');
 		$(this).next('.accordion_panel').toggleClass('active_accordion');
 	})

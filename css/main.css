@@ -1019,20 +1019,24 @@ input[type="submit"].footer_button {
 button.accordion_button {
     color: #444;
     cursor: pointer;
+    padding: 0 10px;
     width: 100%;
     text-align: left;
     border: 1px solid #e0e0e0;
     outline: none;
-    transition: 0.4s;
+/*    transition: 0.4s;*/
     margin-bottom: 0;
     border-radius: 0;
+    height: auto;
+    min-height: 38px;
+    white-space: initial;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion_button.active_accordion, button.accordion_button:hover {
     background-color: #4ebbeb;
-    color: white;
     border-color: #4ebbeb;
+    color: white;
 }
 
 /*Add a symbol to each button to indicate whether it is open or closed*/
@@ -1046,12 +1050,12 @@ button.accordion_button:after {
 
 button.accordion_button.active_accordion:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    color: white; /*NOT WORKING*/
+    /*color: #ffffff; NOT WORKING*/
 }
 
 /* Style the accordion panel. Note: hidden by default */
 div.accordion_panel {
-    padding: 10px;
+    padding: 10px 20px;
     background-color: white;
 	border: 1px solid #e0e0e0;
 	border-top: none;
