@@ -63,7 +63,7 @@ $(document).ready(function() {
 			dropDown.val('blank_option');
 			window.location.href = "who-we-are.html";
 			// window.location.replace('who-we-are.html');
-		} else if (dropdown.val() == 'contact-us') {
+		} else if (dropDown.val() == 'contact-us') {
 			dropDown.val('blank_option');
 			window.location.href = "contact-us.html";
 			// window.location.replace('contact-us.html');

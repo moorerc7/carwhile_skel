@@ -1106,6 +1106,13 @@ div.accordion_panel.active_accordion {
 	margin-bottom: 10px;
 }
 
+.bio_bin img:hover {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+
 .bio_bin h4 {
 	text-transform: uppercase;
 	font-size: 18px;
@@ -1115,3 +1122,29 @@ div.accordion_panel.active_accordion {
 .bio_bin p {
 	font-size: 16px;
 }
+
+/* CONTACT US PAGE RULES ----------------------------------------------------------------------------------------------------*/
+
+.contact_info {
+	text-align: center;
+}
+
+.contact_info h3 {
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.contact_info a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #4ebbeb;
+}
+
+.contact_info a:hover {
+	color: #0FA0CE;
+}
+
+.contact_info > div {
+	margin-bottom: 20px;
+}
+
