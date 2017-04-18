@@ -1008,12 +1008,16 @@ input[type="submit"].footer_button {
 	font-weight: bold;
 }
 
-.FAQ {
+.faq {
 	margin-bottom: 20px;
 }
 
-.FAQ h2 {
+.faq h3 {
 	text-align: center;
+}
+
+.faq hr {
+	width: 30%;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -1071,4 +1075,43 @@ div.accordion_panel.active_accordion {
 
 .accordion_panel p {
 	margin-bottom: 0;
+}
+
+/* WHO WE ARE PAGE RULES ----------------------------------------------------------------------------------------------------*/
+
+.the_team {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.the_team hr {
+	width: 30%;
+}
+
+.the_team .team_description {
+	text-align: left;
+}
+
+.bio_bin {
+	display: inline-block;
+	width: 46%;
+	vertical-align: top;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.bio_bin img {
+	border-radius: 500px;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.bio_bin h4 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.bio_bin p {
+	font-size: 16px;
 }
