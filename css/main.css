@@ -982,7 +982,7 @@ input[type="submit"].footer_button {
 /* WHAT WE DO PAGE RULES ----------------------------------------------------------------------------------------------------*/
 
 .hero_nothome {
-	background-image: url("../assets/images/what_we_do/hero_car_nothome.jpg");
+	background-image: url("../assets/images/what_we_do/hero_car_nothome_grey.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1005,6 +1005,7 @@ input[type="submit"].footer_button {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 44px;
+	font-weight: bold;
 }
 
 .FAQ {
@@ -1041,7 +1042,7 @@ button.accordion_button.active_accordion, button.accordion_button:hover {
 
 /*Add a symbol to each button to indicate whether it is open or closed*/
 button.accordion_button:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '+'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #444;
     float: right;
@@ -1049,8 +1050,9 @@ button.accordion_button:after {
 }
 
 button.accordion_button.active_accordion:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-    /*color: #ffffff; NOT WORKING*/
+    /*content: "\2796";  Unicode character for "minus" sign (-) */
+    content: '-';
+    color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
