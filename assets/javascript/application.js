@@ -151,3 +151,21 @@ $(document).ready(function() {
 		$(this).next('.accordion_panel').toggleClass('active_accordion');
 	})
 });
+
+/*--------------------------------------SCHEDULE PAGE---------------------------------------*/
+$(document).ready(function() {
+	$('#services_slider').change( function() {
+		console.log('SLIDER VALUE CHANGED!');
+		// ABOVE LINE IS FOR TESTING BE SURE TO REMOVE ONCE DONE
+		var cleaningList = $('.services_list_cleaning');
+		var maintenanceList = $('.services_list_maintenance');
+		if ($(this).val() == 0) {
+			cleaningList.toggleClass('hide');
+			maintenanceList.toggleClass('hide');
+		} else if ($(this).val() == 1) {
+			cleaningList.toggleClass('hide');
+			maintenanceList.toggleClass('hide');
+		}
+	});
+});
+

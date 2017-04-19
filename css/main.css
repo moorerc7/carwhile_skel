@@ -1159,6 +1159,7 @@ div.accordion_panel.active_accordion {
 	background-color: #4ebbeb;
 	position: fixed;
 	width: 100%;
+	z-index: 499;
 }
 
 .select_service_banner h1 {
@@ -1172,10 +1173,22 @@ div.accordion_panel.active_accordion {
 	margin-bottom: 0;
 }
 
-.services_list {
+.services_list_cleaning {
 	padding-top: 70px;
+	padding-bottom: 100px;
 	width: 100%;
 	background-color: white;
+}
+
+.services_list_maintenance {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	width: 100%;
+	background-color: white;
+}
+
+.services_list_cleaning.hide, .services_list_maintenance.hide {
+	display: none;
 }
 
 .service_container {
@@ -1208,6 +1221,10 @@ div.accordion_panel.active_accordion {
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 0;
+}
+
+h3.long_title_service {
+	bottom: 0px;
 }
 
 .slider_banner {
@@ -1324,7 +1341,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 8.4px;
   cursor: pointer;
   /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
-  background: #4EBBEB;
+  background: #4ebbeb;
   border-radius: 1.3px;
   /*border: 0.2px solid #010101;*/
 }
