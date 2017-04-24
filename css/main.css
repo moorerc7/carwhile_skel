@@ -1180,6 +1180,10 @@ div.accordion_panel.active_accordion {
 	background-color: white;
 }
 
+.services_list_cleaning a {
+	display: block;
+}
+
 .services_list_maintenance {
 	padding-top: 70px;
 	padding-bottom: 100px;
