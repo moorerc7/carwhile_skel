@@ -1437,6 +1437,10 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-bottom: 0;
 }
 
+h1.long_title_schedule {
+	bottom: 0px;
+}
+
 .info_page_basics {
 	margin-top: 100px;
 }
@@ -1445,9 +1449,21 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-top: 25px;
 }
 
-.info_page_basics h3, .info_page_bin h3, .info_page_bottom h3 {
+.info_page_basics h3 {
+	text-transform: uppercase;
 	text-align: center;
 	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.info_page_bin h3, .info_page_bottom h3 {
+	text-align: center;
+	font-size: 25px;
+}
+
+.info_page_bin ul, .info_page_bottom ul {
+	list-style: circle outside;
+	margin-left: 20px;
 }
 
 .info_page_bottom {
