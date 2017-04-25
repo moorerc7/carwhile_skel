@@ -1437,7 +1437,24 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-bottom: 0;
 }
 
-.scheduling_banner {
+.info_page_basics {
+	margin-top: 100px;
+}
+
+.info_page_basics p {
+	margin-top: 25px;
+}
+
+.info_page_basics h3, .info_page_bin h3, .info_page_bottom h3 {
+	text-align: center;
+	font-size: 25px;
+}
+
+.info_page_bottom {
+	margin-bottom: 75px;
+}
+
+.scheduling_bottom_banner {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -1447,7 +1464,7 @@ input[type=range]:focus::-ms-fill-upper {
 	border-top: 1px solid #4ebbeb;
 }
 
-.scheduling_banner button {
+.scheduling_bottom_banner button {
 	font-size: 25px;
 	position: relative;
 	top: 20px;
